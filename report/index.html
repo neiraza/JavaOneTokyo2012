@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Java One Tokyo 2012 Report</title>
+
+  <meta name="description" content="UCOM小栗による「Java One Tokyo 2012」 のレポートです">
+  <meta name="author" content="小栗 徹">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <!-- Core and extension CSS files -->
+  <link rel="stylesheet" href="../core/deck.core.css">
+  <link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="../extensions/status/deck.status.css">
+  <link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" href="../themes/style/neon.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" href="../themes/transition/horizontal-slide.css">
+
+  <script src="../modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<!-- Begin slides -->
+<section class="slide" id="title-slide">
+<h1>Java One<br>Tokyo 2012<br>Report</h1>
+</section>
+
+<section class="slide" id="title-slide">
+<h1>MOVING JAVA FORWARD<br>April 4-5, 2012<br>Roppongi, Tokyo</h1>
+</section>
+
+<section class="slide" id="ucom-oguri">
+<h1>株式会社UCOM<br><br>Programmer<br>小栗 徹</h1>
+</section>
+
+<section class="slide" id="hello-java">
+  <h2>JavaOneTokyo2012レポート！</h2>
+  <p>株式会社UCOMの小栗と申します。</p>
+  <p>こちらは会社報告用に作成した、<STRONG>Oracle非公式</STRONG>の参加レポートです。</p>
+  <p>基本的に見たもの聴いたものを、私のフィルタを通してお伝えしています。</p>
+  <p>表現が不適切であったり、内容全体が主観な所はご容赦ください。</p>
+  <img src="../images/komusou.png" alt="Japanese KOMUSOU" height="45%" width="45%">
+  <p>2012年4月某日作成</p>
+</section>
+
+<section class="slide" id="comeback-tokyo">
+  <h2>７年ぶりに東京で開催！</h2>
+  <p>2012年4月4-5日、六本木アカデミーヒルズにて開催されたJavaOneに行ってきた。</p>
+  <p>7年前は新卒入社2年目でVBやってて、MicrosoftMVPの方が興味あったころ。</p>
+  <p>JavaOneは米国SF開催で、旅費コミコミで50万円かかるっていうし。
+  <br>いつも参加者に後日談を聞くばかり。なので今回、初参加！</p>
+  <img src="../images/jvo-ex.jpg" alt="duke" height="45%" width="45%">
+  <p>これ「Duke」だよ、山田くん。ちゃんと覚えてよ。</p>
+</section>
+
+<section class="slide" id="oguri0">
+<h2>内容とは関係なく気になったこと</h2>
+<ol>
+  <li class="slide" id="oguri0-1">
+  <p>スーツ多くね？</p>
+  <p>JavaOneって、スーツってイメージが全く無かったので残念な感じ。</p>
+  <p>スーツって仕事でプログラミングしてる先入観が強い・・・。</p>
+  <p>今回は事前に、スーツコスプレやめようぜ。って流れもあっただけにね。</p>
+  <li class="slide" id="oguri0-2">
+  <p>若い人が少ないような？</p>
+  <p>見た目で判断もアレだけど、なんかオッチャンばかりな気も。</p>
+  <p>チケット自体は前売りで全て完売したけど、少し気になった。</p>
+  </li>
+</ol>
+<p class="slide" id="oguri0-3"><strong>僕もC#で.NET効果でUnityとか興味が・・・。</strong></p>
+</section>
+
+<section class="slide" id="intro1">
+<ol>
+  <h2>僕がみたJavaOne 前編</h2>
+  <li class="slide" id="intro1_1">
+  <p>JavaSE7からJavaSE8へ革新的な進化を遂げていくよ？</p>
+  <p>この辺は少し歴史を振り返りながら、どう変わっていくのか別ページで説明しま。</p>
+  </li>
+  <li class ="slide" id="intro1_2">
+  <p>今度こそ、JavaFXに力を入れていくよ？</p>
+  <p>JavaFXはRIAプラットフォームとして、打倒FlexやSliverlightで2007年に登場。</p>
+  <p>しかし、2010年にJavaFXScriptを廃止、JavaAPIへの置き換えという決定が・・・。</p>
+  <p>JavaAPIに入れていくって事で本気だよアピール。Swingバイバイって流れに。</p>
+  <p>このAPIはGroovyやScalaからも利用可能で、GroovyFXやScalaFXって流れも。</p>
+  <p>個人的にはJavaFX1.3で開発をしていたので、期待してるます。</p>
+  </li>
+</ol>
+</section>
+
+<section class="slide" id="intro2">
+<ol>
+  <h2>僕がみたJavaOne 後編</h2>
+  <li class="slide" id="intro2_1">
+  <p><strong>Javaは死んでないよ</strong>っていうメッセージを強く感じた。</p>
+  <p>だったら、リリースを早くしてよ！って僕は思うんですけど。
+  <br>GroovyとかPHPを書いた後にJavaに戻ると、
+  <br><strong>分かりきった事を丁寧に書き過ぎでなげー</strong>って感じません？。
+  <br>だから、ラムダ式とか早くこないかなーって。</p>
+  </li>
+  <li class="slide" id="intro2_2">
+  <p>ユーザ側の反応は？というと</p>
+  <p>僕の感覚だけど、思っていたよりも冷めきってなくて、
+  <br>むしろ色々と形を変えながらも、結構熱い部分はあるんだなって雰囲気。
+  <br>まぁ、JJUG & JGGUGに出入りしているから、その辺では知ってたけど。</p>
+  </li>
+</ol>
+</section>
+
+<section class="slide" id="java-history1">
+  <h2>Javaのおさらい JavaSE6</h2>
+  <p>先ずはJavaSE6から！</p>
+  <li class="slide" id="java-history-java6">
+  <h3>JavaSE 6 Mustang</h3>
+  <p>2006/12/11リリース</p>
+  <ol>
+          <li class="slide" id="java-history-java6-scriptengine">
+          <p>JavaScriptを標準で実行できるようになった</p>
+          <p>AndroidはJavaであってJavaではないので、WebView使ってなんとか</p>
+          </li>
+          <li class="slide" id="java-history-java6-japaneseImperialCalendar">
+          <p>和暦変換が追加された。あると便利かもだけど、どーでもいい感じもする</p>
+          </li>
+          <li class="slide" id="java-history-java6-oome">
+          <p>みんな大好きOOME（OutOfMemoryError）のスタックトレース出るようになった</p>
+          </li>
+          <li class="slide" id="java-history-java6-giveup1">
+          <p>他・・・、SAXが糞だからDOMあるけど、SaTXもどうよとか？</p>
+          </li>
+          <li class="slide" id="java-history-java6-giveup2">
+          <p>JAXBにJAX-WSにとXML大好きなやつとか？</p>
+          </li>
+  </ol>
+  </li>
+  <p class="slide"><strong>そうそう契約を結ばない限り、公式サポートは今年の１１月までですよ！<br>JavaSE7に移行し始めましょう！</strong></p>
+</section>
+
+<section class="slide" id="java-history2">
+  <h2>Javaのおさらい JavaSE7 (1)</h2>
+  <p>去年のことなので使ったことがなくても、最低限知っておくべきことかも。</p>
+  <li class="slide" id="java-history-java7">
+  <h3>JavaSE 7 Dolphin</h3>
+  <p>2011/7/28リリース</p>
+          <li class="slide" id="java-history-java7-coin">
+          <p>Project Coin</p>
+          <ol>
+              <li>switch文で文字列</li>
+              <li>例外のマルチキャッチと安全な再スロー</li>
+              <li>ジェネリクスの省略記法</li>
+              <li>リソースに対するtry節</li>
+          </ol>
+          </li>
+  </li>
+  <p class="slide" id="java-history-java7-1">次のページに続きます！</p>
+</section>
+
+<section class="slide" id="java-history2-1">
+  <h2>Javaのおさらい JavaSE7 (2)</h2>
+  <p>前ページからの続きです！</p>
+  <li class="slide" id="java-history-java7-2">
+  <h3>JavaSE 7 Dolphin</h3>
+  <p>2011/7/28リリース</p>
+          <li class="slide" id="java-history-java7-forkjoin">
+          <p>Fork/Join</p>
+          <p>非同期APIを書く時に使うConcurrency Utilitiesだと、
+          <br>マルチコア時代の細分化されたタスク処理ができないってことで・・・</p>
+          </li>
+          <li class="slide" id="java-history-java7-nio">
+          <p>NIO.2</p>
+          <p>ファイル操作や階層操作が楽になった感じ、あとフォルダ監視とか</p>
+          </li>
+  </li>
+  <p class="slide" id="java-history-java7-2-2"><strong>現在、JavaAPIの日本語verは無いです。
+          <br>翻訳に数千万かかるとかで、有志でやろうかとか。</strong></p>
+</section>
+
+<section class="slide" id="java-history3">
+  <h2>JavaSEのこれから 前編</h2>
+  <p>９年ぶりに言語仕様を改訂しちゃうぞ！？</p>
+  <li class="slide" id="java-history-java8">
+  <h3>JavaSE 8</h3>
+  <p>2013 Summer ???</p>
+          <li class="slide" id="java-history-java8-lambda">
+          <p>Project Lambda</p>
+          <p>Fork/Joinの記述方法があまりにもだるくて、
+          <br>多言語じゃ当たり前のラムダ式がやっとくる</p>
+          <p>ラムダ式のサンプルをどっかのページに書いたので、雰囲気はわかるはず</p>
+          </li>
+  </li>
+  <p class="slide">次のページに続くお</p>
+</section>
+
+<section class="slide" id="java-history3-2">
+  <h2>JavaSEのこれから 後編</h2>
+  <p>前のページからの続き</p>
+  <li class="slide" id="java-history-java8">
+  <h3>JavaSE 8</h3>
+  <p>2013 Summer ???</p>
+          <li class="slide" id="java-history-java8-jigsaw">
+          <p>Project Jigsaw</p>
+          <p>大規模プログラミング対応、jar地獄から解放してくれるとか。
+          <br>今までならMaven使うのにpom様を用意だけど、
+          <br>今後はjar自身が依存性を持ってくれて万歳ぽい</p>
+          </li>
+          <li class="slide" id="java-history-java8-javafx3">
+          <p>JavaFX3.0</p>
+          <p>みんな大好きJavaFXがJavaSEに標準で乗ってきます。
+          <br>Swingとか完全にバイバイですね。
+          <br>AWTとが何だかったのか、反省会が必要ですね。</p>
+          </li>
+  </li>
+  <p class="slide"><strong>ちょっと、リリースが遠くないですか！？</strong></p>
+</section>
+
+
+<section class="slide" id="oguogu1">
+  <h2>ここで一息 前編</h2>
+  <li class="slide" id="oguogu1-wark1">
+  <h3>失敗しないセッションの選び方</h3>
+  <ol>
+          <li class="slide" id="oguogu1-wark1-1">
+          <p>一般公募中心に、コミュニティネタやLTを抑える</p>
+          <p>
+          「SF開催のJavaOneと同じ内容ぽいのは避ける」、<br>
+          「一般公募の方が気合い入ってそう」だし、面白かった。<br>
+          </p>
+          </li>
+          <li class="slide" id="oguogu1-wark1-2">
+          <p>Project Leadな人のセッションで、好きな分野の場合は抑える</p>
+          <p>
+          やっぱり好きな分野のデベロッパーを生で見るのは楽しいし、<br>
+          ライブコーディングしてくれるかもなので、ワクワクするよ。
+          </p>
+          </li>
+          <li class="slide" id="oguogu1-wark1-3">
+          <p>商業臭が強すぎるものは避ける</p>
+          <p>JPAネタのセッションで「コヒ〜レンス使えば大丈夫」の合図で、<br>
+          離席しちゃった人たちもいたとか。
+          </p>
+          </li>
+  </ol>
+  </li>
+</section>
+
+<section class="slide" id="oguogu1-2">
+  <h2>ここで一息 後編</h2>
+  <li class="slide" id="oguogu1-wark2">
+  <h3>昼飯を事前に買ってくる</h3>
+  <ol>
+          <li class="slide" id="oguogu1-wark2-1">
+          <p>ランチセッションに参加する場合、持ち込み制が多い</p>
+          </li>
+          <li class="slide" id="oguogu1-wark2-2">
+          <p>出入り口混雑でダルイ、昼前と昼後の時間が短い、ボッチだから</p>
+          </li>
+          <li class="slide" id="oguogu1-wark2-3">
+          <p>やっぱ、日本は狭いよ。人多すぎダメ。</p>
+          </li>
+
+  </ol>
+  </li>
+</section>
+
+<section class="slide" id="overview1a1">
+  <h2>参加セッション一日目 前半戦(1)</h2>
+    <li class="slide" id="overview1a-1">
+      <h3>4/4(水)　9:00-11:00 [JK1-01]  Strategy Keynote</h3>
+      <p>全体的に「Java is Back」押しな印象。<br>JavaFX押しだけど、ビジネスモデルがいまいち見えてこない。</p>
+      <p>他、Oracle以外の方も。丸山先生がplay2.0押しで一部マニアが湧いたり。<br>N社のスーツが残念なスピーチしたり。</p>
+    </li>
+    <li class="slide" id="overview1a-2">
+      <h3>4/4(水)　11:15-12:15 [JS1-04]  [一般公募セッション] NIO.2を使って、簡単ファイル操作</h3>
+      <p>櫻庭さんセッションて事で人気だった。<br>Javaといえば櫻庭さんってイメージなので、当然といえば当然かな。</p>
+      <p>Javaでファイル操作はダルいので、少しは楽になりそうなきがする。</p>
+    </li>
+</section>
+
+<section class="slide" id="overview1a2">
+  <h2>参加セッション一日目 前半戦(2)</h2>
+  <ol>
+    <li class="slide" id="overview1a-3">
+      <h3>4/4(水)　14:30-15:30 [JS1-23]  [一般公募セッション] JavaFX + FXML + CSS = Javaの次世代GUI</h3>
+      <p>午後も櫻庭さんから。人が多かったのが印象的。</p>
+      <p>JavaFX1.XまではUI書くにも、Scriptなので表現が分かりやすく、結構好きだった。<br>JavaFXScriptは2.Xに上がる時点で廃止されたけど。。。
+      <br>JavaFX2.Xから大嫌いなSwingバリにJavaを書く感じ。キモイ。</p>
+      <p>そこでFXMLという構造体様が登場。これでデザイナーさんとの境界線が見えてきたわけ。</p>
+      <p>サンプル書いたので次ページみて。</p>
+    </li>
+  </ol>
+  </section>
+
+  <section class="slide" id="javafx-sample1">
+  <h2>"Hello World"をJavaで書いた場合</h2>
+<p>JavaFXのサンプル。コンパイルしてないす</p>
+<pre><code>public class JavaFXExample extends Application {
+    @Override public void start(Stage stage) {
+        Scene scene = new Scene(
+            LabelBuilder.create()
+                .text("Hello World!")
+                .layoutX(25)
+                .build());
+        stage.setTitle("Welcome to JavaFX!");
+        stage.setScene(scene);
+        stage.show();
+    }
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+</code></pre>
+</section>
+
+<section class="slide" id="javafx-sample2">
+  <h2>JavaとFXMLで書いた場合</h2>
+<p>JavaFXのサンプル。コンパイルしてないす</p>
+  <pre><code>&lt;BorderPane&gt;
+    &lt;center&gt;
+        &lt;Label text="$helloworld"/&gt;
+    &lt;/center&gt;
+&lt;/BorderPane&gt;</code></pre>
+<pre><code>public classFXMLExample extends Application {
+    @Override public void start(Stage stage) throws Exception {
+        stage.setTitle("FXML Example");
+        Parent root = FMXLLoader.load(getClass().getResource
+                ("example.fxml"),
+                ResourceBundle.getBundle("r.fxml_example"));
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+}</code></pre>
+</section>
+
+<section class="slide" id="overview1b">
+  <h2>参加セッション一日目 後半戦</h2>
+    <li class="slide" id="overview1b-1">
+      <h3>4/4(水)　15:45-16:45 [JS1-31]  Project Lambda: To Multicore and Beyond</h3>
+      <p>ラムダ式のネタ。サンプルを書いてみたので、次ページみてね。</p>
+    </li>
+</section>
+
+<section class="slide" id="lambda-sample1">
+  <h2>Javaにありがちなイベントハンドラ</h2>
+  <p>このサンプル。コンパイルしてないす</p>
+  <pre><code>JButton button = new JButton("OK");
+button.addActionListener(new ActionListener() {
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    // イベント処理
+    update();
+  }
+});</code></pre>
+  <p>これで別スレッドからのUI操作とかになると、
+  <br>シングルスレッドモデルの違反で、もっとゴチャゴチャしてくる</p>
+  <p>やりたいのは、ただのボタンイベントの処理を書きこみたいだけなはずなのに。</p>
+</section>
+
+<section class="slide" id="lambda-sample2">
+  <h2>つうわけでラムダ式で書くと</h2>
+  <p>このサンプル。コンパイルしてないす</p>
+  <pre><code>button.addActionListener( (ActionEvent e) -> update() );</code></pre>
+  <p>もっと簡単に書くと</p>
+  <pre><code>button.addActionListener( e -> update() );</code></pre>
+  <p>どうせなら「()」も無くして欲しいけど、こんな感じ。</p>
+</section>
+
+<section class="slide" id="overview1b2">
+  <h2>参加セッション一日目 後半戦(2)</h2>
+    <li class="slide" id="overview1b-2">
+      <h3>4/4(水)　17:00-18:00 [BoF1-02]  Windows AzureでのスケーラブルなJavaアプリケーション構築</h3>
+      <p>元Oracleで現MS先輩な佐藤直生さんということで選択。
+      <br>MS先輩はOS以外はいい感じという事で、Azureも興味ありあり。</p>
+      <p>Azureは.NET以外にもJava、PHP、node.jsを抑えている所も気になるポイント。
+      <br>でもお値段、高いんでしょって感じもするけど、装備がカタイってのは重要かも。</p>
+      <p>さすが安定のMSらしく、分かりやすい資料と説明でした。</p>
+    </li>
+  <p class="slide" id="overview1b-3">JVM言語大会(JRuby VS Groovy VS Scala)を見に行けば良かったなと少し後悔。</p>
+  <p class="slide" id="overview1b-4">19:00過ぎのLT大会も見にいきたかったけど、子供がインフルエンザ中なので
+  <br>後ろ髪ひかれながらも、飲み会も参加せずに帰宅。</p>
+</section>
+
+<section class="slide" id="lunch">
+  <h2>初日のランチ</h2>
+  <li class="slide" id="lunch-1">
+  <p>超ぶ厚いハンバーガー</p>
+  <img src="../images/potato.jpg" alt="はんばーがー" height="45%" width="45%">
+  <p>浦川さんは会社、山田君は連絡先知らない。初日からボッチ？</p>
+  <p>旧友達が来ていたので、最近のSIer事情を聞いたり、○天の話しをしたり。</p>
+  </li>
+</section>
+
+<section class="slide" id="overview2a1">
+  <h2>参加セッション二日目 前半戦(1)</h2>
+    <li class="slide" id="overview2a-1">
+      <h3>4/5(木)　9:00－11:00 [JK2-01]  Technology Keynote</h3>
+      <p>あんまし覚えていない。なんか昨日との違い分からず、ボーッとしてた。</p>
+      <p>Oracleの人のスピーチが終わったら、途中で抜けてカフェに逃げ込みまったり。</p>
+    </li>
+    <li class="slide" id="overview2a-2">
+      <h3>JavaFX Architecture and Programming Model</h3>
+      <p>おぉ、動画でしか見たことのない本物のRichard Bairだ(笑)
+      <br>ライブコーディングが多かったので、翻訳機なしでも話しが聞けた。<br>たまに、？？？だったけど。</p>
+      <p>一番盛り上がったのは、AndroidタブレットとiPadで同じアプリを動かすデモ。
+      <br>iPad側のデプロイはNetBeansでなくXcodeを！！みんなドキドキ。</p>
+      <p>ハイブリというとTitaniumで良さそうな気がする。
+      <br>商用を考えた場合、ライセンス的に「対Apple」、「対Google」とか、<br>厳しそうだなと思ったり。でも技術的にはワクワク要素強いよね。</p>
+    </li>
+  </section>
+
+<section class="slide" id="overview2a2">
+  <h2>参加セッション二日目 前半戦(2)</h2>
+    <li class="slide" id="overview2a-3">
+    <h3>4/5(木)　13:00-15:00 [JH2-01]  JavaFX 2.0によるリッチグラフィカルアプリケーション開発</h3>
+      <p>お楽しみのハンズオン！息抜きプログラミング！！
+      <br>サーバーからデータを引っ張ってきて、グラフ表示とか更新とか。
+      <br>ハマったのは、サーバー立ち上げって残念なミス・・・。</p>
+    </li>
+  </section>
+
+<section class="slide" id="lunch2">
+  <h2>二日目のランチ</h2>
+  <li class="slide" id="lunch2-1">
+  <p>ボッチ</p>
+  <img src="../images/tokyotower.jpg" alt="東京とわー" height="45%" width="45%">
+  <p>友人はいたけど昼飯時間が勿体無いので、独り東京タワー見ながら菓子パンを。</p>
+  </li>
+</section>
+
+<section class="slide" id="overview2b">
+  <h2>参加セッション二日目 後半戦</h2>
+    <li class="slide" id="overview2b-1">
+      <h3>4/5(木)　15:45-16:45 [JS2-33]  [一般公募セッション] JSR 353: Java API for JSON Processing</h3>
+      <p>立ち見が出るほど人気のセッション。<br>登壇したのはTwitter Japanの山本裕介さん。</p>
+      <p>山本さんは現在、JSR353の仕様策定に関わっている4人の1人。
+      <br>JSR353ってのはJCPでやってるJavaの仕様決めの番号で、
+      <br>こいつはJSONを使うライブラリをJavaAPIに入れようってやつ。
+      <br>以下、印象的な内容を(やや誇張した表現で)列挙</p>
+      <ol>
+      <li class="slide" id="overview2b-1a">
+      <p>新規に作成するWebAPIでXML使うやつなど存在しない</p>
+      </li>
+      <li class="slide" id="overview2b-1b">
+      <p>Visitorパターンは高尚すぎるので、そんな記法なAPIにはしたくない</p>
+      </li>
+      <li class="slide" id="overview2b-1c">
+      <p>Twitterに入社するとTシャツを1枚貰える。
+      <br>2枚目移行は有料かつ送料自己負担。</p>
+      </li>
+    </ol>
+    </li>
+</section>
+
+<section class="slide" id="javaee">
+<h2>JavaEEについて、聞いてません</h2>
+    <p>僕は今、AndroidアプリやiOSアプリを作っていて、<br>
+    JavaFXとJavaEEが被ると、前者を選んじゃうんですよねぇ。</p>
+    <p>JavaEE・・・、僕がエンタープライズ向けなコンサルやマネージャを<br>やってた時なら興味津々だったんだと思います。</p>
+    <p>現在、仕事やプライベートでWebアプリを作る時に<br>JavaEEを直接使う予定もなさげ・・・。</p>
+    <p>でも、自動テストツールの<strong>Arquillian</strong>は抑えておいたほうがいいかも。</p>
+  <img src="../images/duke2.jpg" alt="かわいいか？" height="40%" width="40%">
+</section>
+
+<section class="slide" id="java-one">
+    <h2>最後に</h2>
+    <p>内容だけ見れば容易にとは言いませんが、<br>
+    大半は事前に知識や情報として抑える事が可能だったと思います。</p>
+    <p>ですがセミナーや勉強会に参加する価値は、<br>
+    そのテーマだけでなく、そこに集う人にあると思います。<br>
+    前日が大荒れな天気だったにも関わらず、
+    <br>各地の達人たちが一同に介する様は圧巻でした。</p>
+    <p>登壇した方、野次を飛ばされていた方、実況しまくりな方含め、<br>
+    全てが1つのコンテンツだったんだと思います。<br>
+    とても勉強になりました。ありがとうございました。</p>
+    <p>Oracle社様、このような場を提供して頂きありがとうございました。</p>
+    <p>自社(UCOM)の皆様、参加させて頂きありがとうございました。</p>
+    <p>次ページ以降におまけを少々...</p>
+</section>
+
+<section class="slide" id="omake1">
+  <h2>JavaOneTokyo参加者プレゼント</h2>
+  <li class="slide" id="omake1-1">
+  <p>JavaOneと各スポンサーロゴ入りバッグ＆Tシャツ</p>
+  <img src="../images/present.jpg" alt="ぷれぜんと" height="65%" width="65%">
+  </li>
+</section>
+
+<section class="slide" id="omake2">
+  <h2>JavaOneお土産を買ってみた</h2>
+  <li class="slide" id="omake2-1">
+  <p>パスケースとストラップ？</p>
+  <img src="../images/javaone.jpg" alt="おみやげ" height="65%" width="65%">
+  </li>
+</section>
+
+<section class="slide" id="omake3">
+  <h2>Twitterなお土産もらた</h2>
+  <li class="slide" id="omake3-1">
+  <p>Twitterロゴシール</p>
+  <img src="../images/twitter.jpg" alt="twitter" height="45%" width="45%">
+  <p>自分のMBAに貼るシール候補になりました(照)</p>
+  </li>
+</section>
+
+<section class="slide" id="omake4">
+  <h2>買えなかった・・・</h2>
+  <li class="slide" id="omake4-1">
+  <p>Javaポロシャツ</p>
+  <img src="../images/soldout.jpg" alt="売り切れ" height="40%" width="40%">
+  <p>買ったら買ったで使う機会が無いから、妻に怒られるんだけどさ</p>
+  </li>
+</section>
+
+<section class="slide" id="owari">
+  <h1>最後まで<br>ありがとう<br>ございました</h1>
+</section>
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="../jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/hash/deck.hash.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+  $.deck('.slide');
+});
+</script>
+
+</body>
+</html>
